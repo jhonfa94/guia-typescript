@@ -21,5 +21,6 @@
   const falcon = new FlyingAvenger("Falcon", 44, true);
   console.log(hulk);
   console.log(falcon);
+  //Accediendo al valor de falcon
   console.log(falcon.flying);
 })();
