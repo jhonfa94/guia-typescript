@@ -33,6 +33,18 @@
     ],
 
  */
+/**
+ * !  ORGANIZACIÓN DE LOS ARCHIVOS DE SALIDA
+ * Cuando TypeScript traspila los archivos a javascript son mayores al original y se vuelve un poco mas tedioso 
+ * Desde el archivo de tsconfig.json podemos espeficiar la ruta de los archivo que se transpila a javascript y el nombre del archivo final 
+ * 
+ * Deentor del archvo de tsconfig.json tenemos el "outFile": "./", donde por defecto tenemos la ruta de salida del archivo en el mismo directorio donde esta el archivo compilado
+ * En este caso se modifica la ruta de salida del nombre a "outFile": "./main.js", donde todo lo que se transpile a javascript queda en ese archivo
+ * Para esta configuración realizada se recomienda cambiar el modo de generador de módulos actualmente por defecto se tiene el commonjs  y se debe asignar el AMD "module": "AMD"
+ * Dada esta configuración debemos organizar la parte de los include, pues AMD toma referncia donde se tiene los archivos  para realizar la transpilación, de momento se comenta para el ejemplo, todo esto es compilado a main.js que se dejo por defecto en el tsconfig.json
+
+
+ */
 
 (() => {
 
