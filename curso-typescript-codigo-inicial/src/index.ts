@@ -1,4 +1,5 @@
-import { getPokemon } from './generics/get-pokemon';
+import { Pokemon } from './decorators/pokemon-class';
+// import { getPokemon } from './generics/get-pokemon';
 
 
 // import { printObject, genericFunction, genericFunctionArrow } from './generics/generics';
@@ -25,10 +26,17 @@ import { getPokemon } from './generics/get-pokemon';
 // }
 // console.log(genericFunctionArrow<Villain>(deadpool).dangerLevel);
 // console.log(getPokemon());
-getPokemon(4)
-    .then(pokemon => console.log(pokemon.sprites.front_default))
-    .catch(error => console.log(error))
-    .finally(() => console.log('Fin getPokemon'))
+// getPokemon(4)
+//     .then(pokemon => console.log(pokemon.sprites.front_default))
+//     .catch(error => console.log(error))
+//     .finally(() => console.log('Fin getPokemon'))
+
+
+const charmander = new Pokemon('Charmander');
+// (Pokemon.prototype as any).customName = 'Pikachu'
+
+// console.log(charmander.savePokemonToDB(2));
+charmander.savePokemonToDB(22)
 
 
 
